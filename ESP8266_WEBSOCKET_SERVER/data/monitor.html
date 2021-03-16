@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html lang="en"> 
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Monitoring</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon"  type="image/png" href="favicon.png">
+  <link rel="icon" href="data:,">
+</head>
+
+<body>
+  <div class="topnav">
+    <h1>Smart Home Web Server - Monitoring</h1>
+  </div>
+  
+    <nav class="navigation" > 
+        <a href="index.html">HOME</a> | 
+        <a href="app.html">Appliances</a> | 
+        <a href="monitor.html">Monitoring</a> | 
+        <a href="about.html">About</a> | 
+        <a href="update">Update</a>
+    </nav>
+    <div class="description">Here you can monitor the incoming data from esp8266 nodes.</div>
+    <!-- Card windows -->
+    <div class="card-grid" id="card-grid">
+      <div class="empty">Waiting for the incoming data...</div>
+    </div>
+    <footer class="bottomfooter">© Alessandro De Maria, 2021</footer>
+    <script src="monitorScript.js"></script>
+  </body> 
+</html>

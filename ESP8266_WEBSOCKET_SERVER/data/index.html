@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html lang="en"> 
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon"  type="image/png" href="favicon.png">
+    <link rel="icon" href="data:,">
+  </head>
+
+  <body>
+    <div class="topnav">
+      <h1>Smart Home Web Server - Home</h1>
+    </div>
+    <nav class="navigation" > 
+      <a href="index.html">HOME</a> | 
+      <a href="app.html">Appliances</a> | 
+      <a href="monitor.html">Monitoring</a> | 
+      <a href="about.html">About</a> | 
+      <a href="update">Update</a>
+    </nav>
+    <div class="description"> Welcome to the Smart Home Web Server!</div>
+    <div><img src="home.png" style="width:20%; height:20%;"></div>  
+    <div>
+      Current Date / Time: 
+      <span id="demonew"></span> /
+      <span id="demo"></span>
+    </div>
+    <script>
+      var today = new Date();
+      var dd = today.getDate();
+      var mm = today.getMonth()+1; //January is 0!
+      var yyyy = today.getFullYear();
+      if(dd<10) {
+        dd='0'+dd
+      } 
+
+      if(mm<10) {
+        mm='0'+mm
+      } 
+
+      today = dd+'/'+mm+'/'+yyyy;
+      document.getElementById("demonew").innerHTML = today;
+      var myVar=setInterval(function(){myTimer()},1000);
+
+      function myTimer() {
+          var d = new Date();
+          document.getElementById("demo").innerHTML = d.toLocaleTimeString();
+      }
+    </script>
+    <footer class="bottomfooter">© Alessandro De Maria, 2021</footer>
+  </body> 
+</html>  
