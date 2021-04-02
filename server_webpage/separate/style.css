@@ -1,0 +1,51 @@
+@import url(https://fonts.googleapis.com/css?family=Rubik+One&subset=latin,cyrillic); */
+
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .root {
+      padding: 40px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .data-list {
+      margin: 20px 0;
+      display: flex;
+      flex-direction: column;
+      font-size: 20px;
+    }
+
+    .data-item {
+      display: flex;
+      margin-bottom: 10px;
+    }
+
+    .item-name {
+      margin-right: 10px;
+    }
+
+    .last-response {
+      margin-right: 5px;
+    }
+    .item-name::after, .last-response::after {
+      content: ':';
+    }
+
+    .item-value {
+      color: #0066cc;
+      font-family: 'Rubik One', sans-serif;
+    }
+
+    #temperature {
+      background: linear-gradient(45deg, #1e50a0 33%, #AF3203 66%, #FFA533);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .last-response {
+      font-size: 16px;
+    }
