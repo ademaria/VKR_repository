@@ -17,27 +17,42 @@
   
     <nav class="navigation" > 
         <a href="index.html">HOME</a> | </a><a href="app.html">Appliance</a> | 
-        <a href="monitor.html">Monitoring</a> | <a href="about.html">About</a>
+        <a href="monitor.html">Monitoring</a> | <a href="about.html">About</a> | 
+        <a href="update">Update</a>
     </nav>
     <div class="description">Here you can monitor the incoming data</div>
-    <div class="data-list">
-      <div class="data-item">
-        <div class="item-name">humidity</div>
-        <div class="item-value" id="humidity">---</div>
+    <!-- Card windows -->
+    <div class="card-grid">
+      <div class="card">             
+        <div class="data-list">
+          <div class="data-item">
+            <div class="item-name">Reciver ID:</div>
+            <div class="item-value" id="ID">---</div>
+          </div>        
+          <div class="data-item">
+            <div class="item-name">Ambient temperature:</div>
+            <div class="item-value" id="temperature">---</div>
+          </div> 
+          <div class="data-item">
+            <div class="item-name">Ambient humidity:</div>
+            <div class="item-value" id="humidity">---</div>
+          </div>
+          <div class="data-item">
+            <div class="item-name">Ambient light:</div>
+            <div class="item-value" id="ambientLight">---</div>
+          </div>               
+        </div>
       </div>
-      <div class="data-item">
-        <div class="item-name">temperature</div>
-        <div class="item-value" id="temperature">---</div>
-    </div>        
     </div>
-
-    <div>
+    <div class="lastResponse">
       <span class="last-response">
         Последний ответ был получен
       </span>
       <span id="last-response-date">
         никогда
       </span>
-      <footer class="bottomfooter"> © Copyright 2021, Alessandro De Maria </footer>
-</body> 
+    </div>
+    <footer class="bottomfooter"> © Copyright 2021, Alessandro De Maria </footer>
+    <script src="monitorscript.js"></script>
+  </body> 
 </html>  
